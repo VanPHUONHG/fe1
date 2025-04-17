@@ -1,0 +1,56 @@
+
+<!-- <div>
+      <table class="border border-collapse w-full border-gray-500">
+        <thead>
+            <tr class="bg-amber-300 h-[50px] ">
+              <th class="border px-4">stt</th>
+              <th class="border px-4">name</th>
+              <th class="border px-4">price</th>
+              <th class="border px-4">sale_price</th> 
+              <th class="border px-4">status</th>
+              <th class="border px-4">image</th>
+              <th class="border px-4">category</th>
+              <th class="border px-4">rating</th>
+              <th class="border px-4">actions</th>
+            </tr>
+        </thead>
+        <tbody>
+          @for (item of products; track $index) {
+          <tr class="border">
+            <td class="border">{{$index+1}}</td>
+            <td class="border">{{item.name}}</td>
+            <td class="border">{{item.price}}</td>
+            <td class="border">{{item.sale_price}}</td>
+            <td class="border">{{renderStatus(item.status)}}</td>
+            <td class="border">
+              <img class="mx-auto p-2 h-[100px]" [src]='item.image' alt="lỗi">
+            </td>
+            <td class="border">{{item.category}}</td>
+            <td class="border">{{item.rating}}</td>
+            <td class="border">
+              <button class="border rounded p-2" [routerLink]="['product',item.id]">Chi tiết</button>
+            </td>
+          </tr>
+        }
+        </tbody>
+      </table>
+</div> -->
+
+<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+    @for (item of products; track $index) {
+        <li class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center overflow-hidden">
+            <img [src]="item.image" alt="{{item.name}}" class="w-24 h-24 object-cover rounded-md mb-3">
+            <h2 class="text-lg font-semibold text-gray-800">{{item.name}}</h2>
+            <p class="text-gray-600 font-medium">{{item.price.toLocaleString()}} VND</p>
+            <p *ngIf="item.sale_price" class="text-red-500 font-semibold">Sale: {{item.sale_price.toLocaleString()}} VND</p>
+            <p *ngIf="item.status" class="text-green-500 font-semibold">Còn hàng</p>
+            <p *ngIf="!item.status" class="text-red-500 font-semibold">Hết hàng</p>
+            <p class="text-sm text-gray-500">Danh mục: {{item.category}}</p>
+            <div class="flex items-center gap-1 text-yellow-500">
+                <span>Đánh giá:</span>
+                <span class="flex">⭐ × {{item.rating}}</span>
+            </div>
+            <a [routerLink]="['product', item.id]" class="text-blue-500 hover:underline">Chi tiết</a>
+        </li>
+    }
+</ul>

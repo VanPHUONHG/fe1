@@ -1,0 +1,18 @@
+<input type="text" class="border" [(ngModel)]="job">
+ <button (click)="handleAddJob()" class="px-3 border rounded hover:bg-blue-300">Add job</button>
+
+<h1>Buổi 3</h1>
+<p>Two way Binding</p>
+<ul>
+    <!-- <li>{{jobs[0]}}</li>
+    <li>{{jobs[1]}}</li>
+    <li>{{jobs[2]}}</li>
+    <li>{{jobs[3]}}</li>
+    <li>{{jobs[4]}}</li> -->
+    @for (item of jobs; track $index) {
+        <li>
+            {{$index+1}}.   {{item}}
+            <button (click)="onDelete($index)" class="px-3 rounded border hover:bg-red-400">Xóa</button>
+        </li>
+    }
+</ul>

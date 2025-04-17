@@ -1,0 +1,184 @@
+{
+   "products":[
+     {
+       "id": "1",
+       "name": "Laptop Dell XPS 13",
+       "price": 1200,
+       "sale_price": 999,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Laptop",
+       "rating": 4.5
+     },
+     {
+       "id": "2",
+       "name": "MacBook Air M2",
+       "price": 1300,
+       "sale_price": 1150,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Laptop",
+       "rating": 4.8
+     },
+     {
+       "id": "3",
+       "name": "Samsung Galaxy S23",
+       "price": 1000,
+       "sale_price": 899,
+       "status": false,
+       "image": "https://picsum.photos/200",
+       "category": "Điện thoại",
+       "rating": 4.6
+     },
+     {
+       "id": "4",
+       "name": "iPhone 14 Pro",
+       "price": 1200,
+       "sale_price": 1100,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Điện thoại",
+       "rating": 4.9
+     },
+     {
+       "id": "5",
+       "name": "Sony WH-1000XM5",
+       "price": 400,
+       "sale_price": 349,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Âm thanh",
+       "rating": 4.7
+     },
+     {
+       "id": "6",
+       "name": "Bose SoundLink Revolve+",
+       "price": 299,
+       "sale_price": 249,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Âm thanh",
+       "rating": 4.5
+     },
+     {
+       "id": "7",
+       "name": "Logitech MX Master 3S",
+       "price": 100,
+       "sale_price": 89,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Phụ kiện",
+       "rating": 4.8
+     },
+     {
+       "id": "8",
+       "name": "Razer BlackWidow V4",
+       "price": 200,
+       "sale_price": 179,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Phụ kiện",
+       "rating": 4.7
+     },
+     {
+       "id": "9",
+       "name": "Samsung 32-inch 4K Monitor",
+       "price": 350,
+       "sale_price": 299,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Màn hình",
+       "rating": 4.6
+     },
+     {
+       "id": "10",
+       "name": "Apple iPad Pro 12.9",
+       "price": 1100,
+       "sale_price": 999,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Máy tính bảng",
+       "rating": 4.8
+     },
+     {
+       "id": "11",
+       "name": "Canon EOS R6",
+       "price": 2500,
+       "sale_price": 2299,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Máy ảnh",
+       "rating": 4.9
+     },
+     {
+       "id": "12",
+       "name": "Sony Alpha A7 III",
+       "price": 2000,
+       "sale_price": 1899,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Máy ảnh",
+       "rating": 4.7
+     },
+     {
+       "id": "13",
+       "name": "GoPro Hero 11",
+       "price": 500,
+       "sale_price": 449,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Máy ảnh",
+       "rating": 4.6
+     },
+     {
+       "id": "14",
+       "name": "PlayStation 5",
+       "price": 600,
+       "sale_price": 550,
+       "status": false,
+       "image": "https://picsum.photos/200",
+       "category": "Gaming",
+       "rating": 4.9
+     },
+     {
+       "id": "15",
+       "name": "Xbox Series X",
+       "price": 500,
+       "sale_price": 479,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Gaming",
+       "rating": 4.8
+     },
+     {
+       "id": "16",
+       "name": "Nintendo Switch OLED",
+       "price": 350,
+       "sale_price": 329,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Gaming",
+       "rating": 4.7
+     },
+     {
+       "id": "17",
+       "name": "DJI Mini 3 Pro",
+       "price": 800,
+       "sale_price": 749,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Thiết bị bay",
+       "rating": 4.8
+     },
+     {
+       "id": "18",
+       "name": "Apple Watch Series 9",
+       "price": 400,
+       "sale_price": 379,
+       "status": true,
+       "image": "https://picsum.photos/200",
+       "category": "Đồng hồ thông minh",
+       "rating": 4.9
+     }
+   ]
+}

@@ -1,0 +1,53 @@
+<h1 class="text-2xl text-red-600 text-center font-bold p-5">Danh sách user</h1>
+
+<table class="border-collapse border border-gray-800 w-full  h-[200px] text-center">
+    <thead>
+        <tr class="bg-gray-500 text-white ">
+            <th class="border">Id</th>
+            <th class="border">Name</th>
+            <th class="border">Email</th>
+            <th class="border">Age</th>
+            <th class="border">Gender</th>
+            <th class="border">isActive</th>
+            <th class="border">role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users; let i = index">
+            <td class="border hover:bg-red-200">{{i+1}}</td>
+            <td class="border hover:bg-red-200">{{user.name}}</td>
+            <td class="border hover:bg-red-200">{{user.email}}</td>
+            <td class="border hover:bg-red-200">{{user.age}}</td>
+            
+            <td class="border hover:bg-red-200" [ngClass]="{'bg-gray-300' : user.gender, 'bg-green-50' : !user.gender}" *ngIf="user.gender; else test">Nam</td>
+            <ng-template #test>
+                <td class="border hover:bg-red-200" [ngClass]="{'bg-gray-300' : user.gender, 'bg-green-50' : !user.gender}">Nữ</td>
+            </ng-template>
+
+            <td class="border hover:bg-red-200">{{renderStatus(user.isActive)}}</td>
+            <td class="border hover:bg-red-200" [ngSwitch]="user.role">
+                <span [ngStyle]="{'color': user.role == 'admin'? 'red': user.role == 'member'? 'blue': 'yellow'}" *ngSwitchCase="'admin'">Quản trị viên</span>
+                <span [ngStyle]="{'color': user.role == 'admin'? 'red': user.role == 'member'? 'blue': 'yellow'}" *ngSwitchCase="'member'">Người dùng</span>
+                <span [ngStyle]="{'color': user.role == 'admin'? 'red': user.role == 'member'? 'blue': 'yellow'}" *ngSwitchDefault>Khách hàng</span>
+            </td>
+        </tr>
+        <!-- <tr>
+            <td class="border">{{users[1].id}}</td>
+            <td class="border">{{users[1].name}}</td>
+            <td class="border">{{users[1].email}}</td>
+            <td class="border">{{users[1].age}}</td>
+            <td class="border">{{users[1].gender}}</td>
+            <td class="border">{{users[1].isActive}}</td>
+            <td class="border">{{users[1].role}}</td>
+        </tr>
+        <tr>
+            <td class="border">{{users[2].id}}</td>
+            <td class="border">{{users[2].name}}</td>
+            <td class="border">{{users[2].email}}</td>
+            <td class="border">{{users[2].age}}</td>
+            <td class="border">{{users[2].gender}}</td>
+            <td class="border">{{users[2].isActive}}</td>
+            <td class="border">{{users[2].role}}</td>
+        </tr> -->
+    </tbody>
+</table>
